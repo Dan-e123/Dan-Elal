@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#BFA789"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -9,6 +10,8 @@
     >
 
     <TextView
+        android:textColor="#4E342E"
+        android:gravity="center"
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,16 +28,17 @@
         android:src="@drawable/img" />
 
     <TextView
-        android:id="@+id/Description"
+        android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="אני בחרתי באמא שלי כדמות השראה בשבילי כי היא הבן אדם הכי טוב שאני מכירה וכל יום אני לומדת ממנה עוד על איך להיות בן אדם יותר טוב וחוץ מזה היא הבן אדם שהכי מצחיק אותי ושאני יכולה לדבר איתה על הכל ואנ אוהבת אותה."
+        android:text="אני בחרתי באמא שלי כדמות השראה בשבילי כי היא הבן אדם הכי טוב שאני מכירה וכל יום אני לומדת ממנה עוד על איך להיות בן אדם יותר טוב וחוץ מזה היא הבן אדם שהכי מצחיק אותי ושאני יכולה לדבר איתה על הכל ואני אוהבת אותה."
         android:textSize="20sp" />
-    <Button
-        android:id="@+id/btnClick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/click_here" />
+
 
 </LinearLayout>
+
+    <!-- בחרתי באמא שלי כדמות השראה כי היא האדם שאני הכי מעריכה,
+     ואני לומדת ממנה בכל יום איך להיות בן אדם טוב יותר.
+     היא תמיד מצחיקה אותי, מקשיבה לי
+     ואני מרגישה שאני יכולה לדבר איתה על הכול. בעיצוב המסך בחרתי בצבעי שמנת וחום כדי ליצור אווירה חמה, נעימה ומשפחתית.
+ -->
