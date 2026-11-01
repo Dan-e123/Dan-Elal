@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#BFA789"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,32 +11,44 @@
     >
 
     <TextView
-        android:textColor="#4E342E"
-        android:gravity="center"
         android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="266dp"
+        android:layout_height="90dp"
+        android:gravity="center"
         android:text="דמות השראה-אמא שלי"
-        android:textSize="35sp" />
+        android:textColor="#4E342E"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="75dp" />
 
     <ImageView
         android:id="@+id/imgMom"
-        android:layout_width="248dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="271dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="52dp"
         android:contentDescription="תמונה של אמא שלי"
         android:scaleType="centerCrop"
-        android:src="@drawable/img" />
+        android:src="@drawable/img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     <TextView
         android:id="@+id/tvDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="372dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="40dp"
         android:text="אני בחרתי באמא שלי כדמות השראה בשבילי כי היא הבן אדם הכי טוב שאני מכירה וכל יום אני לומדת ממנה עוד על איך להיות בן אדם יותר טוב וחוץ מזה היא הבן אדם שהכי מצחיק אותי ושאני יכולה לדבר איתה על הכל ואני אוהבת אותה."
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMom" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- בחרתי באמא שלי כדמות השראה כי היא האדם שאני הכי מעריכה,
      ואני לומדת ממנה בכל יום איך להיות בן אדם טוב יותר.
