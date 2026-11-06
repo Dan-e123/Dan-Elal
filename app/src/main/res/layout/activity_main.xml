@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#BFA789"
+    android:background="#B3E5FC"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,25 +14,25 @@
         android:id="@+id/tvTitle"
         android:layout_width="266dp"
         android:layout_height="90dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="דמות השראה-אמא שלי"
-        android:textColor="#4E342E"
+        android:text="להיות ישראלי:"
+        android:textColor="#01579B"
         android:textSize="35sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="75dp" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imgMom"
         android:layout_width="271dp"
         android:layout_height="236dp"
-        android:layout_marginTop="52dp"
-        android:contentDescription="תמונה של אמא שלי"
+        android:contentDescription="תמונה של דגל ישראל"
         android:scaleType="centerCrop"
-        android:src="@drawable/img"
+        android:src="@drawable/flag"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
@@ -41,17 +41,25 @@
         android:layout_width="372dp"
         android:layout_height="173dp"
         android:layout_marginTop="40dp"
-        android:text="אני בחרתי באמא שלי כדמות השראה בשבילי כי היא הבן אדם הכי טוב שאני מכירה וכל יום אני לומדת ממנה עוד על איך להיות בן אדם יותר טוב וחוץ מזה היא הבן אדם שהכי מצחיק אותי ושאני יכולה לדבר איתה על הכל ואני אוהבת אותה."
+        android:text="בשבילי ישראל זה האוכל הטעים, החגים,תחושת המשפחתיות והאווירה הישראלית. זה גם זה שאנחנו יודעים להיות העם הכי מפולג שיש אבל ברגעים של צורך אנחנו נעזור לכל אחד שנראה ונהיה שם אחד עבור השני  "
+        android:textColor="#01579B"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgMom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgMom"
         app:layout_constraintTop_toBottomOf="@+id/imgMom" />
 
+    <Button
+        android:id="@+id/btnIsrael"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ישראל 🇮🇱"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- בחרתי באמא שלי כדמות השראה כי היא האדם שאני הכי מעריכה,
-     ואני לומדת ממנה בכל יום איך להיות בן אדם טוב יותר.
-     היא תמיד מצחיקה אותי, מקשיבה לי
-     ואני מרגישה שאני יכולה לדבר איתה על הכול. בעיצוב המסך בחרתי בצבעי שמנת וחום כדי ליצור אווירה חמה, נעימה ומשפחתית.
- -->
