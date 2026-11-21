@@ -5,19 +5,17 @@
     android:background="#B3E5FC"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp"
     android:id="@+id/main"
     >
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvUserName"
         android:layout_width="266dp"
         android:layout_height="90dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="להיות ישראלי:"
+        android:text="@string/user_name"
         android:textColor="#01579B"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,51 +23,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imgMom"
-        android:layout_width="271dp"
-        android:layout_height="236dp"
-        android:contentDescription="תמונה של דגל ישראל"
-        android:scaleType="centerCrop"
-        android:src="@drawable/flag"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
-
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="372dp"
-        android:layout_height="173dp"
-        android:layout_marginTop="40dp"
-        android:text="בשבילי ישראל זה האוכל הטעים, החגים,תחושת המשפחתיות והאווירה הישראלית. זה גם זה שאנחנו יודעים להיות העם הכי מפולג שיש אבל ברגעים של צורך אנחנו נעזור לכל אחד שנראה ונהיה שם אחד עבור השני  "
-        android:textColor="#01579B"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imgMom"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imgMom"
-        app:layout_constraintTop_toBottomOf="@+id/imgMom" />
 
 
     <Button
-        android:id="@+id/btnIsrael"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/btnSendMessage"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:text="ישראל 🇮🇱"
+        android:text="@string/send_message"
         android:textSize="18sp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 
-    <Switch
-        android:id="@+id/swDan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/btnFollow"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="30dp"
-        android:text="Switch"
+        android:text="@string/follow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
