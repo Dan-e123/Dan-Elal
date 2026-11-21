@@ -32,7 +32,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/send_message"
         android:textSize="18sp"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +44,63 @@
         android:layout_height="60dp"
         android:layout_marginBottom="30dp"
         android:text="@string/follow"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+
+
+
+    <ImageView
+        android:id="@+id/imgFlag"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/flag"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/swDan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/map"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/swDan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:alpha="0" />
+
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@id/imgFlag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+    <Switch
+        android:id="@+id/swDan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+       android:text="Switch"
+        android:checked="false"
+        app:layout_constraintTop_toBottomOf="@id/btnSendMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
