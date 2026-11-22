@@ -76,31 +76,50 @@
         android:alpha="0" />
 
 
-
     <SeekBar
         android:id="@+id/seekBar"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="10dp"
         android:max="100"
         android:progress="0"
-        app:layout_constraintTop_toBottomOf="@id/imgFlag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@id/imgFlag" />
 
     <Switch
         android:id="@+id/swDan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-       android:text="Switch"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
         android:checked="false"
-        app:layout_constraintTop_toBottomOf="@id/btnSendMessage"
+        android:text="Switch"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/btnSendMessage" />
+
+    <EditText
+        android:id="@+id/TextFreeNum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:hint="הכנס מספר:"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="אישור"
+        app:layout_constraintBottom_toTopOf="@+id/btnFollow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextFreeNum"
+        app:layout_constraintVertical_bias="0.538" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

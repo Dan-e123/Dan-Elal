@@ -1,9 +1,11 @@
 package com.DanElal.danfirstapp;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.Switch;
@@ -23,12 +25,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     Button btnSendMessage;
     Button btnFollow;
     Switch swDan;
-
-
-
     ImageView imgFlag;
     ImageView imgMap;
     SeekBar seekBar;
+
+    EditText TextFreeNum;
 
 
 
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         imgFlag = findViewById(R.id.imgFlag);
         imgMap = findViewById(R.id.imgMap);
         seekBar = findViewById(R.id.seekBar);
-
+        TextFreeNum = findViewById(R.id.TextFreeNum);
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         } else if (ViewId == R.id.btnFollow) {
             Toast.makeText(this, R.string.started_following, Toast.LENGTH_SHORT).show();
             btnFollow.setText(R.string.following);
+            Log.d("JJJ","lll");
         }
     }
 
@@ -90,7 +92,8 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         float alpha = progress / 100f;
 
         imgMap.setAlpha(alpha);
-        imgFlag.setAlpha(1 - alpha);
+
+
     }
 
     @Override
