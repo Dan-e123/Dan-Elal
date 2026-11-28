@@ -109,8 +109,8 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="70dp"
-        android:layout_height="40dp"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
         android:layout_marginTop="16dp"
         android:text="אישור"
         app:layout_constraintBottom_toTopOf="@+id/btnFollow"
@@ -119,6 +119,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextFreeNum"
         app:layout_constraintVertical_bias="0.538" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:text="שחק שוב"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
